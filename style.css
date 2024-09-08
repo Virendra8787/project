@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'Museoslab';
+    src: url('./assets/font/museo-slab-font/Museo_Slab_100.otf') format('otf'),
+        url('./assets/font/museo-slab-font/Museo_Slab_1000.otf') format('otf'),
+        url('./assets/font/museo-slab-font/Museo_Slab_1000italic.otf') format('otf'),
+        url('./assets/font/museo-slab-font/Museo_Slab_100italic.otf') format('otf'),
+        url('./assets/font/museo-slab-font/Museo_Slab_300.otf') format('otf'),
+        url('./assets/font/museo-slab-font/Museo_Slab_300italic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+:root {
+    --primary: #3971B1;
+    --btn-logo: #E4E4E4;
+}
+
+body {
+    /* font-family: 'Museoslab', Arial, sans-serif; */
+
+    font-family: 'Museoslab';
+    overflow-x: hidden;
+
+
+}
+
+.main-container {
+    position: relative;
+}
+
+.hr-line hr {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 1200px;
+    border-top: 1px solid #E4E4E4;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    height: 1000px;
+    width: 1px;
+    background-color: #E4E4E4;
+}
+
+.container-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.logo-container {
+    position: absolute;
+    left: 100px;
+    background-color: #3971B1;
+
+}
+
+
+
+.logo-wrapper {
+
+    position: absolute;
+    top: 25px;
+
+}
+
+.logo {
+    background-color: #E4E4E4;
+    color: #3C3C3C;
+    width: 88px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+
+}
+
+.logo:hover {
+    background-color: #3C3C3C;
+    color: #E4E4E4;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.contact-us-wrapper {
+    position: absolute;
+    top: 165px;
+    width: 190px;
+    height: 40px;
+
+}
+
+.contact-us-wrapper div {
+    color: #3C3C3C;
+    font-size: 35px;
+}
+
+.content-below-contact-us {
+    position: absolute;
+    top: 275px;
+    width: 398px;
+    height: 71px;
+}
+
+.content-below-contact-us>div {
+    color: #646464;
+    font-size: 22px;
+}
+
+.form-container {
+    position: absolute;
+    top: 446px;
+    width: 398px;
+    height: 71px;
+}
+
+.form-container .form-wrapper div.form-title {
+    width: 243px;
+    height: 29px;
+    font-size: 26px;
+    color: var(--primary);
+    position: relative;
+}
+
+.form-content {
+    position: absolute;
+    top: 70px;
+}
+
+
+input {
+    width: 475px;
+    border: none;
+    padding: 39px 10px 10px;
+    margin: 10px;
+    border-bottom: 2px solid #D3D3D3;
+
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+
+
+div select {
+    width: 500px;
+    border: none;
+    padding: 30px 10px 10px;
+    margin: 10px;
+    border-bottom: 2px solid #D3D3D3;
+
+}
+
+input::placeholder {
+    color: #8E8E8E;
+    font-size: 16px;
+
+}
+
+div select,
+div select option {
+    color: #8E8E8E;
+    font-size: 16px;
+
+}
+
+
+
+.sumit-btn {
+    width: 150px;
+    height: 45px;
+    background-color: #3971B1;
+    color: #FFFFFF;
+    position: absolute;
+    top: 506px;
+    left: 353px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.sumit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(137, 176, 248);
+    color: black;
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+/* nav-start */
+
+.nav-wrapper-container {
+    position: relative;
+    width: 100%;
+
+
+}
+
+.nav-wrapper {
+    position: absolute;
+    right: 0;
+}
+
+ul li {
+
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+/* nav-end */
+
+
+.text-below-nav {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    height: 14px;
+    width: 377px;
+    color: #AFAFAF;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+/* Lcation symbol css starts */
+
+.location-concentric {
+    position: absolute;
+    top: 415px;
+    right: 415px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #becddb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.inner-circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #3872b4;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Lcation symbol css ends */
+
+.nav-wrapper .nav-link {
+    width: 510px;
+    display: inline-flex;
+    position: absolute;
+    right: 100px;
+    top: 35px;
+    background-color: transparent;
+}
+
+
+.nav-link ul {
+
+    max-width: 590px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    background-color: transparent;
+    gap: 40px;
+
+
+}
+
+
+
+.img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 838px;
+    height: 638px;
+    transform: translate(100px, 0px);
+}
+
+
+
+.heading-right-section {
+    width: 479px;
+    height: 118px;
+    position: absolute;
+    top: 743px;
+    right: 120px;
+    color: #383838;
+    font-size: 28px;
+}
+
+.heading-right-section-contact {
+    position: absolute;
+    top: 911px;
+    right: 140px;
+    width: 455px;
+    height: 19px;
+    color: #8E8E8E;
+    font-size: 16px;
+}
+
+.sales-enquiry-heading {
+    position: absolute;
+    top: 980px;
+    right: 430px;
+    width: 169px;
+    height: 29px;
+    font-size: 26px;
+    color: #3971B1;
+}
+
+.sales-enquiry-heading-phone-email {
+    position: absolute;
+    top: 1039px;
+    right: 120px;
+    width: 479px;
+    height: 51px;
+    color: #8E8E8E;
+    font-size: 16px;
+}
+
+.re-dev-heading {
+    position: absolute;
+    top: 1140px;
+    right: 311px;
+    width: 288px;
+    height: 29px;
+    font-size: 26px;
+    color: #3971B1;
+}
+
+.re-dev-heading-phone-email {
+    position: absolute;
+    top: 1199px;
+    right: 469px;
+    width: 130px;
+    height: 50px;
+    color: #8E8E8E;
+    font-size: 16px;
+}
+
+
+/* footer style */
+footer {
+    position: absolute;
+    top: 1369px;
+    /* bottom: 0; */
+
+}
+
+.footer-wrapper {
+    width: 100vw;
+    height: 405px;
+    background-color: #F4F4F4;
+
+}
+
+.foot-logo {
+    position: absolute;
+    left: 100px;
+    top: 51px;
+}
+
+.foot-nav {
+    position: absolute;
+    top: 51px;
+    left: 448px;
+    height: 245px;
+    width: 134px;
+    background-color: transparent;
+}
+
+.foot-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
+    background-color: transparent;
+}
+
+.foot-nav ul li {
+    font-size: 14px;
+    color: #383838;
+    background-color: transparent;
+}
+
+.foot-subscription {
+    position: absolute;
+    top: 51px;
+    left: 772px;
+    width: 272px;
+    background-color: transparent;
+}
+
+.foot-subscription .get-news {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.foot-subscription .email-subscription {
+    background-color: transparent;
+    height: 30px;
+}
+
+.foot-subscription input {
+    width: 272px;
+    border: none;
+    margin: 20px 0px;
+    padding: 10px;
+
+
+}
+
+.foot-subscription input::placeholder {
+    font-size: 14px;
+}
+
+.subscribe-btn {
+    width: 150px;
+    height: 45px;
+    background-color: #3971B1;
+    color: #FFFFFF;
+    position: absolute;
+    top: 100px;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.subscribe-btn:hover {
+    cursor: pointer;
+    background-color: rgb(137, 176, 248);
+    color: black;
+    transform: scale(1.05);
+
+}
+
+
+
+.foot-scroll-to-top {
+    position: absolute;
+    top: 215px;
+    left: 1245px;
+    background-color: transparent;
+}
+
+.foot-scroll-to-top img {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+}
+
+.foot-scroll-to-top img:hover {
+    cursor: pointer;
+}
+
+.to-top-text-wrapper{
+    background-color: transparent;
+}
+.to-top-text{
+    text-align: left;
+    background-color: transparent;
+}
+.social-media{
+    position: absolute;
+    bottom: 0;
+    display: inline-flex;
+    width: 100vw;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    /* border-top: 1px solid black; */
+}
+.social-media > div{
+    background-color: transparent;
+}
+.sm-icons img{
+    background-color: transparent;
+}
+.foot-hr{
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    width: 1200px;
+    border-top: 1px solid #E4E4E4;
+}

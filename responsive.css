@@ -1,0 +1,18 @@
+@media screen and (max-width: 1000px) {
+    .form-container{
+        display: none;
+    }
+    .nav-wrapper .nav-link{
+        display: none;
+    }
+  }
+
+
+
+
+
+   @media screen and (max-width: 1200px) {
+    .img-container img {
+       display: none;
+    }
+  } 
