@@ -15,11 +15,15 @@
     padding: 0;
     font-family: 'Museoslab';
 }
-ul a{
+a{
 text-decoration: none;
-transform: scale(1.1);
+transition: all 0.5s ease-in-out;
 }
 
+ul a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    }
 :root {
     --primary: #3971B1;
     --secondary: #646464;
@@ -68,8 +72,8 @@ header {
 }
 
 .logo:hover {
-    background-color: #3C3C3C;
-    color: #E4E4E4;
+    background-color: cornflowerblue;
+    /* color: #E4E4E4; */
     cursor: pointer;
     transform: scale(1.01);
 }
