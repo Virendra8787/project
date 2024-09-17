@@ -15,6 +15,9 @@
     padding: 0;
     font-family: 'Museoslab';
 }
+ul a{
+text-decoration: none;
+}
 
 :root {
     --primary: #3971B1;
