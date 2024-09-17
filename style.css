@@ -39,12 +39,13 @@ header {
     position: fixed;
     top: 0;
     width: 90vw;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     background-color: transparent;
     border-bottom: 1px solid #E4E4E4;
     padding: 1rem 0rem;
+    z-index: 200;
 }
 
 .logo-container {
@@ -69,6 +70,11 @@ header {
     transform: scale(1.01);
 }
 
+#header-id .logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .header-nav-link {
     display: flex;
     justify-content: center;
@@ -237,8 +243,6 @@ div select option {
 
     margin-top: 12rem;
     margin-right: 15rem;
-    /* height: 60px;
-    width: 60px; */
     height: 3.75rem;
     width: 3.75rem;
     border-radius: 50%;
@@ -443,17 +447,12 @@ visibility: hidden;
     background-color: transparent;
     border-top: 1px solid #E4E4E4;
 }
-/* .social-media > div{
-    background-color: transparent;
-}
-.sm-icons img{
-    background-color: transparent;
-} */
+
 
 #resp-nav-bar{
     width: 100vw;
     position: relative;
-    background-color: aqua;
+    background-color: #f4f4f4;
     z-index: 200;
     display: none;
 

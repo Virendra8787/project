@@ -14,6 +14,7 @@
         <div class="container">
             <div class="header-wrapper">
                 <header id="header-id">
+                   <div class="logo-nav-container">
                     <div class="logo-wrapper">
                         <div class="logo">Logo</div>
                     </div>
@@ -27,6 +28,7 @@
                             <li>CONTACT</li>
                         </ul>
                     </div>
+                   </div>
                     <div id="resp-nav-bar" class="">
                         <ul id="resp-nav-ul" class="">
                             <li>PROJECTS</li>
@@ -81,7 +83,7 @@
                                             <option value="" disabled selected hidden>Query Type</option>
                                             <option value="project">Projects</option>
                                             <option value="media">Media</option>
-                                            <option value="learning">Career</option>
+                                            <option value="learning">Learning</option>
                                         </select>
                                     </div>
 
@@ -92,10 +94,30 @@
                                             <option value="projectTwo">Project 2</option>
                                             <option value="projectThree">Project 3</option>
                                             <option value="projectFour">Project 4</option>
-                                            <option value="projectFive">Project 5</option>
-                                            <option value="projectSix">Project 6</option>
                                         </select>
                                     </div>
+
+
+                                    <div id="mediaOptions" style="display: none;">
+                                        <select id="media" name="media" required>
+                                            <option value="" disabled selected hidden>Select Media</option>
+                                            <option value="mediaOne">Media 1</option>
+                                            <option value="mediaTwo">Media 2</option>
+                                            <option value="mediaThree">Media 3</option>
+                                            <option value="mediaFour">Media 4</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div id="learningOptions" style="display: none;">
+                                    <select id="learning" name="learning" required>
+                                        <option value="" disabled selected hidden>Select Learning</option>
+                                        <option value="learningOne">Learning 1</option>
+                                        <option value="learningTwo">Learning 2</option>
+                                        <option value="learningThree">Learning 3</option>
+                                        <option value="learningFour">Learning 4</option>
+                                    </select>
+                                </div>
 
 
                                     <div class="submit-btn-container">
@@ -146,8 +168,6 @@
                     </div>
                 </div>
             </div>
-
-
 
             <footer>
                 <div class="foot">

@@ -1,23 +1,29 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.getElementById('queryType').addEventListener('change', function() {
     let projectOptions = document.getElementById('projectOptions');
     if (this.value === 'project') {
         projectOptions.style.display = 'block';
     } else {
         projectOptions.style.display = 'none';
+    }
+});
+
+
+document.getElementById('queryType').addEventListener('change', function() {
+    let mediaOptions = document.getElementById('mediaOptions');
+    if (this.value === 'media') {
+        mediaOptions.style.display = 'block';
+    } else {
+        mediaOptions.style.display = 'none';
+    }
+});
+
+
+document.getElementById('queryType').addEventListener('change', function() {
+    let learningOptions = document.getElementById('learningOptions');
+    if (this.value === 'learning') {
+        learningOptions.style.display = 'block';
+    } else {
+        learningOptions.style.display = 'none';
     }
 });
 
@@ -29,9 +35,6 @@ button.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
-
-
 window.addEventListener('scroll', () => {
     const headerScroll = document.getElementById('header-id');
     if (window.scrollY > 100) {
@@ -40,8 +43,6 @@ window.addEventListener('scroll', () => {
         headerScroll.style.backgroundColor = 'transparent';
     }
 });
-
-
 
 let hamBtn = document.getElementById('ham-button');
 let closeBtn = document.getElementById('close-button');
@@ -66,24 +67,3 @@ closeBtn.addEventListener('click', () => {
     textBN.style.display = "block";
     
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
